@@ -23,7 +23,7 @@ A clean and educational Python project that:
 
 ## 🛰️ How to Run
 
-1. Clone the repository: git clone https://github.com/davibarrionuevo/iss_real_time_tracker.git
+1. Clone the repository: git clone git@github.com/davibarrionuevo/iss_real_time_tracker.git
 2. Make sure the assets/ folder contains map.gif and iss.gif
 3. Run the project: python main.py
 
