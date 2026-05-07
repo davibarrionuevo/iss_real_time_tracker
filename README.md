@@ -1,27 +1,16 @@
 # ISS Real-Time Tracker
 
-A clean and educational Python project that:
-- Fetches the list of astronauts currently on the **International Space Station (ISS)**
-- Generates a text file with their names
-- Outputs the ISS current coordinates (latitude and longitude) in the console
-- Displays the ISS position in real-time on a world map using Turtle
+This project tracks the **International Space Station** in real time, showing its current position on a world map and listing the astronauts on board. It was built as a hands-on Python exercise, focused on API calls and library handling.
 
+## Features
 
-## ⚙️ Features
+The tracker fetches live ISS coordinates from Open Notify API every five seconds and displays its icon on an animated world map using Python's Turtle graphics. It also queries the People in Space API for the current crew, filtering specifically for ISS astronauts, and saves their names to a text file that opens automatically.
 
-- Uses public APIs (Open Notify and People in Space)
-- Graphical interface with world map and ISS icon
-- Real-time tracking every 5 seconds
-- Automatically opens the astronauts list
+## Technologies
 
-## 🛠️ Technologies
+The project was built entirely with Python's standard libraries, using `turtle` to display the world map and animate the ISS icon, `urllib.request` and `json` to handle API calls, and `webbrowser` to open the astronauts list text file.
 
-- Python 3
-- `turtle` – for the graphical map
-- `urllib.request` + `json` – for API calls
-- `webbrowser` – to open the text file
-
-## 🛰️ How to Run
+## How to Run
 
 1. Clone the repository:
 ```bash
