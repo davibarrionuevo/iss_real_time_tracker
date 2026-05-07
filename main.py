@@ -43,10 +43,15 @@ def get_and_save_astronauts():
         people_in_space = json.loads(response.read())
 
         # The endpoint includes people on other missions. Keep only ISS crew.
-        astronauts_on_iss = [p for p in people_in_space["people"] if p.get("iss") is True]
+        astronauts_on_iss = [
+            p for p in people_in_space["people"] if p.get("iss") is True
+        ]
 
         with open(ASTRONAUTS_FILE, "w") as file:
-            file.write(f"There are currently {len(astronauts_on_iss)} astronauts on board the ISS:\n\n")
+            file.write(
+                f"There are currently {len(astronauts_on_iss)}"
+                " astronauts on board the ISS:\n\n"
+            )
             for astronaut in astronauts_on_iss:
                 file.write(f"{astronaut['name']} - on board\n")
             
