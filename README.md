@@ -14,7 +14,7 @@ The project was built entirely with Python's standard libraries, using turtle to
 
 1. Clone the repository:
 ```bash
-git clone git@github.com/davibarrionuevo/iss-real-time-tracker.git
+git clone git@github.com:davibarrionuevo/iss-real-time-tracker.git
 ```
 2. Make sure the `assets` folder contains `map.gif` and `iss.gif`
 3. Run the project:
